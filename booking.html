@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Booking</title>
+    <link rel="stylesheet" href="bstyles.css">
+</head>
+<body>
+    <video autoplay muted loop class="bg-video">
+        <source src="carspassing.mp4" type="video/mp4"> <!-- Replace with your video file -->
+        Your browser does not support the video tag.
+    </video>
+    <div class="booking-form">
+        <h1>Book a Vehicle</h1>
+        <form id="vehicleBookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+
+            <label for="pickupDate">Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+
+            <label for="pickupTime">Pickup Time:</label>
+            <input type="time" id="pickupTime" name="pickupTime" required>
+
+            <label for="dropoffDate">Dropoff Date:</label>
+            <input type="date" id="dropoffDate" name="dropoffDate" required>
+
+            <label for="dropoffTime">Dropoff Time:</label>
+            <input type="time" id="dropoffTime" name="dropoffTime" required>
+
+            <button type="submit"><a href="payment.html" class="book">Book Now</a></button>
+        </form>
+    </div>
+
+    <div class="confirmation" id="confirmation" style="display:none;">
+        <h2>Booking Confirmed!</h2>
+        <p id="confirmationMessage"></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Car For You. All rights reserved.</p>
+    </footer>
+
+    <script src="bscript.js"></script>
+</body>
+</html>

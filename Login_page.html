@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Sharing System - Login</title>
+    <link rel="stylesheet" href="Lstyles.css">
+</head>
+<body>
+    <video autoplay muted loop class="bg-video">
+        <source src="carvideo.mp4" type="video/mp4"> <!-- Replace with your video file -->
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>Welcome to VSS</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username or E-mail:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p>Need an account? <a href="#">Sign up now!</a></p>
+        </form>
+        <p id="message" class="message"></p>
+    </div>
+    <script src="Lscript.js"></script>
+</body>
+</html>
